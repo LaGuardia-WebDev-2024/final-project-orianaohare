@@ -13,7 +13,7 @@ ul.nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: pink;
   position: fixed;
   top: 0;
   width: 100%;
@@ -33,13 +33,78 @@ ul.nav li a {
 }
 
 ul.nav li a:hover:not(.active) {
-  background-color: yellow;
+  background-color: lightblue;
 }
 
 ul.nav .active {
-  background-color: red;
+  background-color: teal;
 }
 
 h1 {
   width: 100%;
 }
+
+body, h1, p {
+  font-family: 'Brunson', sans-serif;
+}
+@font-face {
+  font-family: 'Brunson';
+  src: url('https://cdn.glitch.global/ff6a7582-07e3-4ca9-adf7-edd52d02a45a/Akira%20Expanded%20Demo.otf?v=1749582325168') format('truetype');
+}
+.parallax {
+  position: relative; /* Needed for absolute positioning inside */
+}
+
+.centered-text {
+  position: fixed;      
+  top: 35%;            
+  left: 50%;           
+  transform: translate(-50%, -50%); 
+  color: hotpink;
+  font-size: 200px;      
+  margin: 1;
+  z-index: 10;          
+}
+p {
+  line-height:2;    
+}
+
+.collage-container {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.collage-title {
+  text-align: center;
+  font-family: 'Brunson', sans-serif;
+  font-size: 60px;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.collage {
+  column-count: 5;
+  column-gap: 5px;
+}
+
+.collage img {
+  width: 90%;
+  margin-bottom: 10px;
+  display: block;
+  border-radius: 0;
+  break-inside: avoid;
+}
+  
+  
+    .intro {
+      background: linear-gradient(to right, pink, purple);
+      padding: 60px 20px;
+      border-radius: 12px;
+      margin: 40px auto;
+      width: 80%;
+      box-shadow: 0 0 20px rgba(255, 203, 116, 0.2);
+    }
+    .highlight {
+      color: #fff3b0;
+      font-style: italic;
+    }
