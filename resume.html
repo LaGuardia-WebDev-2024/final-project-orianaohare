@@ -5,16 +5,53 @@
     <title>Final Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
-      /* Styling Only Related To THIS Page */
+         body {
+      background-color: #fffdf5;
+      color: #333;
+    
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+ .container {
+      padding: 60px 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 3em;
+      color: #f3c76b;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .socials a {
+      display: block;
+      margin: 15px 0;
+      font-size: 1.1em;
+      text-decoration: none;
+      color: #555;
+      transition: color 0.3s ease;
+    }
+    .socials a:hover {
+      color: #f3a35c;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
     </style>
   </head>
   <body>
     <!-- ⬆⬆⬆⬆ Nav Bar -->
     <ul class="nav">
       <li><a href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="art.html">Art</a></li>
-      <li><a class="active" href="resume.html">Resume</a></li>
+      <li><a href="aboutme.html">Moments</a></li>
+      <li><a href="art.html">About</a></li>
+      <li><a class="active" href="resume.html">Contact</a></li>
       <li style="float: right">
         <a target="_blank" href=""
           ><img
@@ -31,7 +68,19 @@
       </li>
     </ul>
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>Resume</h1>
+    
+  <div class="container">
+    <h1>Let’s Stay in Touch</h1>
+    <p>Follow me, message me, or just vibe from afar.</p>
 
+    <div class="socials">
+      <a href="https://instagram.com/oriana_ohare" target="_blank">📸 Instagram: <strong>@oriana_ohare</strong></a>
+      <a href="https://pinterest.com/superkoolsiren" target="_blank">📌 Pinterest: <strong>superkoolsiren</strong></a>
+    </div>
+
+    <footer>
+      Made with love & light 📷✨
+    </footer>
+  </div>
   </body>
 </html>
